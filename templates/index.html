@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}IndexHtmlPage{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block body %}
+    <h2>Wel come {{ name|capitalize}} to index.html page!!!</h2>
+    {% if name == "Tesfahun" %}
+        Hello, {{ name }}. Wel come home!
+    {% else %}
+        Hello, Stranger! {{ name }}
+    {% endif %}
+    <style>
+    </style>
+{% endblock %}
