@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}User Page{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block body %}
+    <h1> User Template Body</h1>
+    <h2> Here are the list of enrolled students: </h2>
+    <ul>
+        {% for student in students %}
+            <li>{{ student }}</li>
+        {% endfor %}
+    </ul>
+    <style>
+    </style>
+{% endblock %}
